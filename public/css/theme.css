@@ -1,0 +1,84 @@
+:root {
+  --primary: rgb(255, 140, 0, 1);
+  --primary-dark: rgb(209, 0, 105, 1);
+  --primary-70: rgba(238, 242, 246, 0.7);
+  --primary-50: rgba(238, 242, 246, 0.5);
+  --primary-30: rgba(238, 242, 246, 0.3);
+  --primary-10: rgba(238, 242, 246, 0.1);
+  --logo: #7d8386;
+  --sidebar-icon: #7d8386;
+  --background-color: rgb(238, 242, 246, 1);
+  --background-darker-color: #e0e2e7;
+  --font-color: #23353c;
+}
+
+.bg-grad-sidebar {
+  background-image: none;
+  background-color: var(--background-color);
+  border-right: 1px solid var(--background-darker-color);
+}
+
+#nova .w-sidebar h3.text-white {
+  color: var(--font-color);
+}
+#nova .w-sidebar h3.text-white span.text-white {
+  color: var(--font-color);
+}
+#nova .w-sidebar ul.list-reset li a {
+  color: var(--font-color);
+}
+#nova .w-sidebar div.bg-logo {
+  background-color: var(--white);
+}
+#nova .w-sidebar div.bg-logo svg {
+  color: var(--font-color);
+}
+
+.form-global-search, .form-search, .checkbox, .btn-default, .rounded, .card, .form-input-bordered, .toasted.error, .toasted.success, .form-input:active, .form-input:focus, .rounded-lg {
+  border-radius: 0;
+}
+
+#nova .w-sidebar div.bg-logo {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.rounded-tr-lg, .rounded-b-lg, .rounded-l-lg {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.content div.shadow {
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+body #nova div.content div.px-view div.relative form div.card > div.flex {
+  display: block;
+}
+body #nova div.content div.px-view div.relative form div.card > div.flex > div:nth-child(1) {
+  width: 100%;
+  padding-bottom: 0;
+}
+body #nova div.content div.px-view div.relative form div.card > div.flex div:nth-child(2) {
+  padding-top: 5px;
+  width: 100%;
+}
+body #nova div.content div.px-view div.relative form div.card > div.flex div:nth-child(2) > div.border-t.border-r.border-60.rounded-tr-lg {
+  border-left-width: 1px;
+}
+body #nova div.content div.px-view div.relative form div.card > div.flex div:nth-child(2) .flex-grow > div > div.py-6:first-child {
+  padding-top: 0;
+}
+body #nova div.content div.px-view div.relative form div.card > div.flex div:nth-child(2) div > div > div.z-10 {
+  border: 0;
+}
+body #nova div.content div.px-view div.relative form div.card > div.flex div:nth-child(2) div > div > div.z-10 > div button.border-r {
+  border: none;
+}
+body #nova div.content div.px-view div.relative form div.card > div.flex div:nth-child(2) div > div > div.z-10 > div > div button {
+  border: none;
+}
+body #nova div.content div.px-view div.relative form div.card > div.flex div:nth-child(2) div > div > div.z-10 > div > div button.border-r {
+  border: none;
+}

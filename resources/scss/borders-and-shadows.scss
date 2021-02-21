@@ -1,0 +1,21 @@
+#nova {
+    .w-sidebar {
+        div.bg-logo {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+        }
+    }
+}
+
+.rounded-tr-lg, .rounded-b-lg, .rounded-l-lg {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.content {
+    div.shadow {
+        -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,.05);
+        box-shadow: 2px 2px 2px 0px rgba(0,0,0,.05);
+    }
+}

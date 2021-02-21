@@ -1,0 +1,23 @@
+#nova {
+    .w-sidebar {
+        h3.text-white {
+            color: var(--font-color);
+            span.text-white {
+                color: var(--font-color);
+            }
+        }
+        ul.list-reset {
+            li {
+                a {
+                    color: var(--font-color);
+                }
+            }
+        }
+        div.bg-logo {
+            background-color: var(--white);
+            svg {
+                color: var(--font-color);
+            }
+        }
+    }
+}

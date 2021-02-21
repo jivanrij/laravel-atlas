@@ -3,6 +3,7 @@
 namespace Blijnder\LaravelAtlas;
 
 use Illuminate\Support\ServiceProvider;
+use Laravel\Nova\Nova;
 
 class LaravelAtlasServiceProvider extends ServiceProvider
 {
@@ -11,6 +12,16 @@ class LaravelAtlasServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Nova::booted(function () {
+            Nova::theme(asset('/vendor/laravel-atlas/css/theme.css'));
+            Nova::script('atlas-theme-js', asset('/vendor/laravel-atlas/js/theme.js'));
+        });
+
+        $this->publishes([
+            __DIR__ . '/../public/js' => public_path('vendor/laravel-atlas/js'),
+            __DIR__ . '/../public/css' => public_path('vendor/laravel-atlas/css'),
+        ], 'blijnder-atlas');
+
         /*
          * Optional methods to load your package assets
          */

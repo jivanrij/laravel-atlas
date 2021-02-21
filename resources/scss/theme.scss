@@ -1,0 +1,25 @@
+:root {
+  --primary: rgb(255, 140, 0, 1);
+  --primary-dark: rgb(209, 0, 105, 1);
+  --primary-70: rgba(238, 242, 246, 0.7);
+  --primary-50: rgba(238, 242, 246, 0.5);
+  --primary-30: rgba(238, 242, 246, 0.3);
+  --primary-10: rgba(238, 242, 246, 0.1);
+  --logo: #7d8386;
+  --sidebar-icon: #7d8386;
+  --background-color: rgb(238, 242, 246, 1);
+  --background-darker-color: #e0e2e7;
+  --font-color: #23353c;
+}
+
+.bg-grad-sidebar {
+  background-image: none;
+  background-color: var(--background-color);
+  border-right: 1px solid var(--background-darker-color);
+}
+@import 'colors';
+@import 'components/nav';
+@import 'sharp-corners';
+@import 'borders-and-shadows';
+@import 'block-builder';
+
