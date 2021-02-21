@@ -1,0 +1,61 @@
+{
+    "name": "blijnder/laravel-atlas",
+    "description": "A simplistic CMS build on Laravel Nova with UI improvements.",
+    "keywords": [
+        "blijnder",
+        "laravel-atlas"
+    ],
+    "homepage": "https://github.com/blijnder/laravel-atlas",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jonathan van Rij",
+            "email": "jonathan@blijnder.nl",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "*",
+        "laravel/nova": "~3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blijnder\\LaravelAtlas\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blijnder\\LaravelAtlas\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Blijnder\\LaravelAtlas\\LaravelAtlasServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAtlas": "Blijnder\\LaravelAtlas\\LaravelAtlasFacade"
+            }
+        }
+    }
+}
